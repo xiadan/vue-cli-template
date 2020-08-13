@@ -15,12 +15,13 @@ module.exports = {
 				'vue$': 'vue/dist/vue.common.js',
 				'~c': '@/components',
 				'~s': '@/store',
+				'~r': '@/router',
 			}
 		},
 		plugins: [
 			new webpack.ProvidePlugin({
 				_: 'lodash',
-				moment: 'moment',
+				axios: 'axios',
 				to: 'await-to-js',
 			}),
 		],
