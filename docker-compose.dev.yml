@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  vue-cli-template:
+    image: ebiven/vue-cli
+    container_name: "vue-cli-template"
+    command: "sh run.sh"
+    volumes:
+      - .:/code
+    expose:
+        - "80"
+    environment:
+      - VIRTUAL_HOST=template.xiadanstudio.com

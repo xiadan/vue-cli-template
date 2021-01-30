@@ -1,0 +1,10 @@
+horserace_web:
+  image: ebiven/vue-cli
+  container_name: "horserace_web"
+  command: "sh run.sh"
+  volumes:
+    - .:/code
+  ports:
+    - "3000:3000"
+  expose:
+    - "3000"
