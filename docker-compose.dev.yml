@@ -10,4 +10,4 @@ services:
     expose:
         - "80"
     environment:
-      - VIRTUAL_HOST=template.xiadanstudio.com
+      - VIRTUAL_HOST=develop.xiadanstudio.com
