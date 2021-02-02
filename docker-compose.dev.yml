@@ -11,3 +11,9 @@ services:
         - "80"
     environment:
       - VIRTUAL_HOST=develop.xiadanstudio.com
+    networks:
+      - xiadan-network
+
+networks:
+  xiadan-network:
+    external: true
