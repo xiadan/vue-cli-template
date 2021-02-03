@@ -4,6 +4,7 @@ services:
   vue-cli-template:
     image: ebiven/vue-cli
     container_name: "vue-cli-template"
+    restart: always
     command: "sh run.sh"
     volumes:
       - .:/code
